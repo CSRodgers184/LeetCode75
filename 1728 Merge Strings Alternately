@@ -1,15 +1,15 @@
 1.	class Solution(object):
-2.	def mergeAlternately(self, word1, word2):
-3.	i, j = 0, 0
-4.	res = []
-5.	while i < len(word1) and j < len(word2):
-6.	res.append(word1[i])
-7.	res.append(word2[j])
-8.	i += 1
-9.	j += 1
-10.	res.append(word1[i:])
-11.	res.append(word2[j:])
-12.	return"".join(res)
+2.	    def mergeAlternately(self, word1, word2):
+3.	        i, j = 0, 0
+4.	        res = []
+5.	        while i < len(word1) and j < len(word2):
+6.	            res.append(word1[i])
+7.	            res.append(word2[j])
+8.	            i += 1
+9.	            j += 1
+10.	        res.append(word1[i:])
+11.	        res.append(word2[j:])
+12.	        return"".join(res)
 
 
 Pesudocode
@@ -26,3 +26,4 @@ Pesudocode
 10.	res.append(word1[i:]) # because there may be a letter left  add the word
 11.	res.append(word2[j:])
 12.	return to array
+
