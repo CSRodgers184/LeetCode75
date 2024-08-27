@@ -1,0 +1,32 @@
+PusedoCode
+1.	Set Class
+2.	Set the definitions
+3.	Set the definitions continued
+4.	Define K for length
+5.	Length has to be zero in order to work. 
+6.	So if it is not return False 
+7.	create varab;le factors 
+8.	*
+9.	*
+10.	for L is in range of the miniumm of string one or 2
+11.	if I  is valid, the is devisor  a substring of string 1 
+12.	if its true return the string
+13.	return empty string
+
+Code
+1.	class Solution:
+2.	def gcdOfStrings(self, str1: str, str2: str) -> str:
+3.	len1, len2 = len(str1), len(str2)
+4.	def valid(k):
+5.	if len1 % k or len2 % k: 
+6.	return False
+7.	n1, n2 = len1 // k, len2 // k
+8.	base = str1[:k]
+9.	return str1 == n1 * base and str2 == n2 * base 
+10.	for i in range(min(len1, len2), 0, -1):
+11.	if valid(i):
+12.	return str1[:i]
+13.	return ""
+
+
+
