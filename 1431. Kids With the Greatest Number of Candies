@@ -1,0 +1,7 @@
+class Solution:
+    def kidsWithCandies(self, candies: List[int], extraCandies: int) -> List[bool]:
+        #What is the maxium candies inside the given array
+        maxCandies = max(candies)
+
+        #returning an array of Boolean values(t or F) current number of candies is grreater than or equal to the max       number of candies after the extra candies are added to it. and we do it for every candy in our candy array.
+        return [(curNum + extraCandies >= maxCandies) for curNum in candies]
