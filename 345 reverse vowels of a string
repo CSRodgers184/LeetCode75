@@ -1,0 +1,35 @@
+Puseduocode
+1.	class Solution:
+2.	def reverseVowels(self, s: str) -> str:
+3.	vowels = set("aeiouAEIOU")
+4.	stk = [c for c in s if c in vowels]
+5.	s = list(s)
+6.	for i, c in enumerate(s):
+7.	if c in vowels:
+a.	s[i] = stk.pop()
+8.	return "".join(s)
+
+Code
+1.	class Solution:
+2.	def reverseVowels(self, s: str) -> str:
+3.	vowels = set("aeiouAEIOU")
+4.	stk = [c for c in s if c in vowels]
+5.	s = list(s)
+6.	for i, c in enumerate(s):
+7.	if c in vowels:
+a.	s[i] = stk.pop()
+8.	return "".join(s)
+
+Real Code
+
+class Solution:
+    def reverseVowels(self, s: str) -> str:
+        vowels = set("aeiouAEIOU")
+        stk = [c for c in s if c in vowels]
+        s = list(s)
+        for i, c in enumerate(s):
+            if c in vowels:
+                s[i] = stk.pop()
+        return "".join(s)
+
+
